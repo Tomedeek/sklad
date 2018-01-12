@@ -1,0 +1,48 @@
+<div ng-hide="visibleBlock" ng-init="getProductInfo()">
+
+    <header-component></header-component>
+
+    <div class="container indent-under">
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3 class="bold-text">{{product.article}} {{product.brand}} </h3>
+                <b4>{{product.descr}}</b4>
+
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Места хранения</h3>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action full-width reset-border sm-text indent-all">{{product.place}}</li>
+                    <li ng-repeat="place in showPlace" class="list-group-item list-group-item-action full-width reset-border sm-text indent-all"
+                        ng-swipe-left="deletePlace(place.place, $index)">
+                        {{place.place}}
+                    </li>
+                </ul>
+                <br>
+                <a href ng-click="getAddPlace()" class="btn btn-secondary reset-border full-width">Добавить место хранения</a>
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Вес запчасти</h3>
+                <p class="list-group-item list-group-item-action full-width reset-border sm-text">{{product.weight}}</p>
+                <br>
+                <a href class="btn btn-secondary reset-border full-width" ng-click="getProductInfo()">Получить значение с весов</a>
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Фото</h3>
+                <img ng-src="{{photoProduct.url}}" on-error="../img/no-photos.png" class="img-product" ng-repeat="photoProduct in product.urlProduct">
+                <img src="../img/no-photos.png" ng-if="!product.urlProduct" alt="" class="img-product img-product-center">
+            </div>
+        </div>
+    </div>
+</div>
+
+<add-place-component ng-show="visibleBlock"></add-place-component>

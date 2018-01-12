@@ -1,0 +1,30 @@
+<header-component></header-component>
+
+<div class="container bg-gray indent-under">
+    <div class="row bg-black">
+        <div class="col">
+            <div class="input-group">
+                <input type="text" ng-model="searchItem" class="form-control reset-border no-border bg-dark" placeholder="Поиск товара">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="list-group">
+        <a href="/reception/{{leNumber}}/{{product.article}}"
+           class="list-group-item list-group-item-action full-width reset-border list-product"
+           ng-repeat="product in filteredDeceptionProduct = (receptionProduct | filter:{article: searchItem})">
+            <div class="list-img">
+                <img ng-src="{{::product.urlProduct[0].url}}" on-error="../img/no-photos.png" alt="" class="product-photo">
+            </div>
+            <div class="title-product">
+                <div class="article-product">
+                    {{product.article}}
+                </div>
+                <div class="brand-product">
+                    {{product.brand}}
+                </div>
+            </div>
+        </a>
+        <h3 class="text-center" ng-show="!filteredDeceptionProduct.length">{{message}}</h3>
+    </div>

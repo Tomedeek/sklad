@@ -1,0 +1,71 @@
+<div ng-hide="visibleBlock">
+    <header-component></header-component>
+
+    <div class="container indent-under">
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3 class="bold-text">{{product.article}} {{product.brand}} </h3>
+                <b4>{{product.descr}}</b4>
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Места хранения</h3>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action full-width reset-border sm-text indent-all">
+                        {{product.place}}
+                    </li>
+                    <li ng-repeat="place in showPlace"
+                        class="list-group-item list-group-item-action full-width reset-border sm-text indent-all"
+                        ng-swipe-left="deletePlace(place.place, $index)">
+                        {{place.place}}
+                    </li>
+                </ul>
+                <br>
+                <a href ng-click="getAddPlace()" class="btn btn-secondary reset-border full-width">
+                    Добавить место хранения
+                </a>
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Вес запчасти</h3>
+                <input type="text" class="list-group-item list-group-item-action full-width reset-border sm-text"
+                       ng-model="weightProduct">
+                <br>
+                <form name="weightForm">
+                    <input type="range" name="weight" ng-model="weightProduct" min="0" max="40" step="1">
+                </form>
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Отобраное количество</h3>
+                <form name="countForm">
+                    <input type="number" min="0" max="99" name="count" ng-model="countProduct"
+                           class="form-control reset-border no-border" ng-value="::product.count" required><br>
+                </form>
+            </div>
+        </div>
+
+        <div class="row jumbotron reset-border">
+            <div class="col">
+                <h3>Фото</h3>
+                <img ng-src="{{photoProduct.url}}" on-error="../img/no-photos.png" class="img-product" alt=""
+                     ng-repeat="photoProduct in product.urlProduct">
+                <img src="../img/no-photos.png" ng-if="!product.urlProduct" alt=""
+                     class="img-product img-product-center">
+            </div>
+        </div>
+    </div>
+
+    <a href="" class="btn btn-danger reset-border full-width fixed-bottom"
+       ng-click="saveData()"
+       ng-show="$prodRecCtrl.showSaveBtn(weightProduct, countProduct)">Сохранить</a>
+
+</div>
+
+<add-place-component ng-show="visibleBlock"></add-place-component>

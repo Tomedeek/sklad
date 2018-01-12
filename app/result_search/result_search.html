@@ -1,0 +1,21 @@
+<header-component></header-component>
+<div class="indent-under">
+    <div class="list-group">
+        <a href="/product/{{product.article}}" class="list-group-item list-group-item-action full-width reset-border list-product"
+           ng-repeat="product in products track by $index">
+            <div class="list-img">
+                <img ng-src="{{::product.urlProduct[0].url}}" on-error="../img/no-photos.png" alt="" class="product-photo">
+            </div>
+            <div class="title-product">
+                <div class="article-product">
+                    {{::product.article}}
+                </div>
+                <div class="brand-product">
+                    {{::product.brand}}
+                </div>
+            </div>
+        </a>
+        <h3 class="alert alert-danger reset-border text-center">{{noProduct}}</h3>
+
+    </div>
+</div>

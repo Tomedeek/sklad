@@ -1,0 +1,21 @@
+<div ng-init="$ctrl.init()" ng-hide="visibleProduct">
+    <header>
+        <logout-component></logout-component>
+    </header>
+
+    <search-component></search-component>
+<div class="container">
+    <div class="row">
+        <div class="list-group full-width">
+            <a href="selection" class="list-group-item list-group-item-action full-width reset-border">
+                <p class="reset-margin">Отборка</p>
+                <p class="notification" ng-show="countSelection">{{countSelection}}</p>
+            </a>
+            <a href="reception" class="list-group-item list-group-item-action full-width reset-border">
+                <p class="reset-margin">Прийомка</p>
+                <p class="notification" ng-show="countReception">{{countReception}}</p>
+            </a>
+        </div>
+    </div>
+</div>
+</div>

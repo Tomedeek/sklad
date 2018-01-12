@@ -1,0 +1,8 @@
+<div ng-init="$receptCtrl.init()">
+    <header-component></header-component>
+    <div class=" indent-under">
+        <div class="list-group">
+            <a href="/reception/{{receptionProduct.uuid}}" class="list-group-item list-group-item-action reset-border order" ng-repeat="receptionProduct in listReceptionDocument">{{receptionProduct.view}}</a>
+        </div>
+    </div>
+</div>

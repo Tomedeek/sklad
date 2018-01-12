@@ -1,0 +1,12 @@
+<div class="container bg-gray">
+    <div class="row bg-black">
+        <div class="col">
+            <div class="input-group">
+                <input type="text" ng-model="searchProduct" class="form-control reset-border no-border bg-dark" placeholder="Введите артикул товара">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary reset-border no-border bg-dark" type="button" ng-click="startSearch(searchProduct)" ng-disabled="showSearchBtn(searchProduct)">Найти</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

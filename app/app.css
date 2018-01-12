@@ -1,0 +1,241 @@
+body {
+    font-family: Arsenal,sans-serif;
+}
+
+header {
+    background-color: rgba(0,0,0,.85);
+    padding-bottom: 3.2em;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(0,0,0,.85);
+    color: #fff;
+}
+
+nav > h4 {
+    line-height: 2.1;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+}
+
+a:hover svg {
+    opacity: 0.9;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.reset-border {
+    border-radius: 0 !important;
+}
+
+.no-border {
+    border: 0;
+}
+
+.no-border:hover {
+    border: 0;
+}
+
+.input-group {
+    padding: 5% 0;
+}
+
+.notification {
+    background-color: #868e96;
+    padding: 0 17px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 2;
+    position: absolute;
+    right: 5%;
+}
+
+.list-group-item {
+    font-size: 21px;
+    line-height: 2.5;
+    margin-left: 0;
+}
+
+.form-control, .btn {
+    padding: 1rem .75rem;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 21px;
+}
+
+.indent-top {
+    margin-top: 5%;
+}
+
+.sm-text {
+    font-size: 14px;
+}
+
+.btn-secondary {
+    background-color: #868e96;
+    color: #fff;
+}
+
+.btn-secondary:disabled {
+    background-color: #868e96;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+.indent-all {
+    padding: 5%;
+}
+
+.indent-header {
+    line-height: 1.8;
+}
+
+.btn-logout {
+    left: auto;
+    color: #fff;
+    padding: 13px;
+}
+
+.bg-gray {
+    background-color: #EEEEEE;
+}
+
+.bg-dark {
+    background-color: rgba(121, 121, 121, 0.4);
+}
+
+.bg-black {
+    background-color: rgba(0,0,0,.85);
+}
+
+.indent-under {
+    padding-top: 3.2em;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.btn-logout > svg {
+    margin: 2px 0 0 15px;
+}
+
+.btn-back {
+    left: 17px;
+
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADHklEQVR4Xu2dzc4NQRCG37J3Fe6AJfEXESsbK2zciI0bkUhYW1lZuQMbRLgAIhEsRISWSc7EYL7pbl9q6qffsz19pmaep6una6bnjIAfUwJiGp3BQQHGnYACKMCYgHF4ZgAFGBMwDs8MoABjAsbhmQEUYEzAODwzgAL0CZRSTorIF/1I/RFSZ0Ap5QSABwBOAbgsIl/7Een+Iq2ABfzbB4TPAFwRke+6SPu2nlLACvyZyhMA10XkRx8mvdbpBGzAnyk+BnBDRH7qYW3fckYBDwHc2kAwnYxPi8ibdkx6LdMIaOj5E8XPAM6LyHM9pH1bTiEgKvxJVXgBkeGHFxAdfmgBGeCHFZAFfkgBmeCHE5ANfigBGeGHEdAI/yOAS56KrJaSzH0d0AH/nIi8aDloT21cC8gO3/UQNAJ8twJGge9SwEjw3QkYDb4rASPCdyNgVPguBIwM31xAI/wPAC5ELLJaCj6zQqwD/lkRed1yMBHbmAgg/N9dZXcBhP9nnu4qgPD/HSR3E0D462eoXQQQ/tHTA3UBhL89N9tDQG2t5vvDPP9VxGnkcfdZVUAp5T6AOxs7ORVZqef5NUFqAkop9wDcJXyjIahBwLvDSuW0VW6t96tfC+IQVFegNgTNoUspjwDc3NiV6SR8UURe1nc3X4s9BMxPKs4Py61RHPZkrC5gos1awLAQWwxFzIQVD7tkACU4yABKMLwY93donhMMb8gwEwxvyBwjE3hTXqsEahyOprX/IZef17jtOgs6amdGluBCQEexli4T3AgYVYIrASNKcCdgNAkuBYwkwa2AUSS4FjCCBPcCOiXwQe1a5fe/3zcWa+7+kqx2vCEyoPMCXigJoQR0DEdhJIQTkE1CSAGZJIQVkEVCaAEZJIQXEF1CCgGRJaQRsKgVag+EfAJwRkTe1oqkPb7PKKC2Ao9/X6/dszYuWzwFcI0vcNA2sL4geHqFyVUR+bZD+OYQ6Yag5ZEvMoEv8WnuEgoN+RorBahZNpl6CIogiQKMLVEABRgTMA7PDKAAYwLG4ZkBFGBMwDg8M4ACjAkYh2cGGAv4BaAYqnAUAsRWAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 24px;
+    padding-left: 25px;
+}
+
+.product-photo {
+    max-width: 57px;
+    position: relative;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 25px;
+    background: #868e96;
+    margin: -14px 0;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.input-group .form-control:active,
+.input-group .form-control:focus,
+.input-group .form-control:hover {
+    z-index: 0;
+    color: #000;
+}
+
+.form-control {
+    color: #fff;
+}
+
+.form-control, .form-control:focus {
+    transition: all .2s;
+}
+
+.img-product {
+    max-width: 48%;
+    margin: 1%;
+}
+
+.img-product-center {
+    margin-left: 25%;
+}
+
+.order {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.title-product {
+    display: inline-block;
+    margin: 0px;
+    width: calc(100% - 70px);
+    float: right;
+    height: 70px;
+    padding-top: 12px;
+}
+
+.list-product {
+    display: block;
+    padding: 0px;
+    height: 70px;
+    background: #FAFAFA;
+    max-height: 73px;
+}
+
+.list-img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+
+.article-product {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.brand-product {
+    font-size: 15px;
+    line-height: 30px;
+    display: block;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.jumbotron {
+    background-color: #EEEEEE;
+    padding: 1rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "article": "51216",
+    "brand": "ASMETAL",
+    "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lorem magna. Praesent molestie velit in ligula vestibulum, nec tristique diam rhoncus.",
+    "weight": "0,14",
+    "place": "Корпус A / Палетна зона 1 / Этаж 1",
+    "urlProduct": [
+      {
+        "url": "https://cdn.busmarket.ua/photos/320x320/n/m/n/q/s/d7951809.jpeg"
+      },
+      {
+        "url": "https://cdn.busmarket.ua/photos/320x320/n/m/n/q/s/d7951809.jpeg"
+      },
+      {
+        "url": "https://cdn.busmarket.ua/photos/320x320/n/m/n/q/s/d7951809.jpeg"
+      }
+    ]
+  },
+  {
+    "article": "58317",
+    "brand": "ASMETAL",
+    "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lorem magna. Praesent molestie velit in ligula vestibulum, nec tristique diam rhoncus.",
+    "weight": "0,15"
+  },
+  {
+    "article": "41018",
+    "brand": "ASMETAL",
+    "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lorem magna. Praesent molestie velit in ligula vestibulum, nec tristique diam rhoncus.",
+    "weight": "0,16",
+    "urlProduct": [
+      {
+        "url": "https://cdn.busmarket.ua/photos/320x320/n/m/n/q/s/d7951809.jpeg"
+      }
+    ]
+  },
+  {
+    "article": "21419",
+    "brand": "ASMETAL",
+    "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lorem magna. Praesent molestie velit in ligula vestibulum, nec tristique diam rhoncus.",
+    "weight": "0,17"
+  }
+]

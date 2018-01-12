@@ -1,0 +1,20 @@
+<header>
+    <a href class="btn-logout btn-back col-3 fixed-top" ng-click="closeAddPlace()">Назад</a>
+</header>
+
+<select class="dropdown-item list-group-item reset-border" ng-options="case as case.name for case in cases.elements"
+        ng-model="getCase" ng-change="findChildren('000000001', getCase.name)">
+    <option value="">Выбрать место</option>
+</select>
+
+<map-component ng-if="ChildElements[0].elements" group="ChildElements[0]"></map-component>
+
+<footer class="full-width fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <a href class="col-6 btn btn-secondary reset-border full-width border-white" ng-click="addNewPlace(getCase, getPalletArea, getFloor)">Добавить</a>
+            <a href class="col-6 btn btn-secondary reset-border full-width border-white" ng-click="closeAddPlace()">Отменить</a>
+            <a href class="col btn btn-secondary reset-border full-width border-white" ng-click="resetAddPlace()">Сбросить</a>
+        </div>
+    </div>
+</footer>

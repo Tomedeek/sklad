@@ -1,0 +1,17 @@
+<nav>
+    <h4 class="text-center">Авторизация</h4>
+</nav>
+
+<div class="container indent-all">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-danger reset-border" role="alert" ng-show="alertBlock">
+                Неверный артикул
+            </div>
+            <form class="form-group">
+                <input type="password" class="form-control reset-border" placeholder="Введите код доступа" ng-model="userArticle"><br>
+                <a href="" class="btn btn-secondary reset-border full-width" ng-click="sendPost()">Войти</a>
+            </form>
+        </div>
+    </div>
+</div>

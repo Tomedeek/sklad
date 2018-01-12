@@ -1,0 +1,7 @@
+<select class="dropdown-item list-group-item reset-border"
+        ng-options="item as item.name for item in $ctrl.group.elements track by item.name"
+        ng-model="getCase"
+        ng-change="addPlace($ctrl.group.code, getCase.name)">
+    <option value="">Выбрать место</option>
+</select>
+<map-component ng-if="getCase.elements" group="getCase"></map-component>
